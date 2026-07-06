@@ -1,7 +1,7 @@
 
 ---
 title: "How"
-draft: true
+draft: false
 tags:
   - 
 ---
