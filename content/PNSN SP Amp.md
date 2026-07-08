@@ -1,7 +1,7 @@
 
 ---
-title: "PNSN Aircell Switch"
-draft: false
+title: "PNSN SP Amp"
+draft: true
 tags:
   - 
 ---
@@ -10,11 +10,11 @@ Check engineering Notebook on PNSN Drive
 
 ## Current Objectives
 
-1. Finalize Schematic/Design (Almost Done)
+1. Test the design
     
-2. Ltspice Simulation (In Progress)
+2. Ltspice Simulation
     
-3. Breadboarding (Components on the way)
+3. Breadboarding
 	
 4. Find Enclosure for new circuit (Could it use SP enclosure?)
     
@@ -40,12 +40,6 @@ Check engineering Notebook on PNSN Drive
 	- [ ] Select Vout Capacitor (to prevent voltage sag)
 	- [ ] Determine if transient protection is needed
 	- [ ] Add input and output short protections
-	- [ ] Add input and output short protections
-		- [ ] search for TVS diodes
-	- [ ] After schematic finalized (ish) upload ltspice files
-		- [ ] let gavin know its on github
-	- [ ] Update osidian and push to public
-		- [ ] let Ben and gavin know
 	- [x] Configure for dual supply operation
 		- [ ] Should we include monitoring network? (use 3rd set as a "flag" for valid operation)
 	- [ ] Add external EN and SHDN controls
@@ -62,10 +56,6 @@ Check engineering Notebook on PNSN Drive
 
 **How should we build this switch?**
 	Using the LTC4417 IC in conjunction with power PMOS
-
-**Desmos Links:**
-- [OV and UV Calculations](https://www.desmos.com/calculator/kvbikgmmfr)
-- [Inrush Current Calculations](https://www.desmos.com/calculator/hsbmt6z5uk)
 	
 **LTC4417 Notes:**
 Predefined hysterisis (switching threshold) is 30mV when grounded. Should we consider smth? higher? Should we add a filtering cap instead?
@@ -101,6 +91,14 @@ TVS diode (bidirectional) on input and (unidirectional) on output
 **For dual supply operation:**
 Ground V3, OV3, UV3, VS3 and G3 pins of the unused channel. However, if you want to be able to create a separate pin to act as flag for ov/uv region (I think its 5V if within an OV/UV region and GND if outside of all regions).
 
+
+**Sandpoint for Mickey:**
+x2 BB_box (wall mounted box for storing pref. 2 batteries)= 1
+x1 Prostar power panel
+x3 900 MHz Yagi antennas (Larger than 6 inches, look for high gain but don't grab the huge ones)
+video and photo documentation
+x4 sections of aluminum angle (for solar panels)
+50' roll of 1 1/4" flex conduit.
 
 ## Meeting History
 Meet with Ben every Monday?
