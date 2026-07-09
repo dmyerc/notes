@@ -1,0 +1,29 @@
+Version 4
+SymbolType CELL
+
+LINE Normal -16 -32 -16 32
+LINE Normal -16 0 16 0
+LINE Normal 16 -32 16 32
+
+LINE Normal -48 0 -16 0
+LINE Normal 16 -48 16 -32
+LINE Normal 16 32 16 48
+
+PIN -64 0 LEFT 8
+PINATTR PinName G
+PINATTR SpiceOrder 2
+
+PIN 16 -64 TOP 8
+PINATTR PinName D
+PINATTR SpiceOrder 1
+
+PIN 16 64 BOTTOM 8
+PINATTR PinName S
+PINATTR SpiceOrder 3
+
+WINDOW 0 -40 -80 Left 2
+WINDOW 3 -40 80 Left 2
+
+SYMATTR Prefix X
+SYMATTR Value IPB120P04P4L_03_L0
+SYMATTR Description Infineon OptiMOS P-channel Level-0

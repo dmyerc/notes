@@ -61,7 +61,7 @@ Check engineering Notebook on PNSN Drive
 		                                                Aircell Bank
 
 **How should we build this switch?**
-	Using the LTC4417 IC in conjunction with power PMOS
+	Using the LTC4417 IC in conjunction with power end-to-end PMOS
 
 **Desmos Links:**
 - [OV and UV Calculations](https://www.desmos.com/calculator/kvbikgmmfr)
@@ -101,6 +101,13 @@ TVS diode (bidirectional) on input and (unidirectional) on output
 **For dual supply operation:**
 Ground V3, OV3, UV3, VS3 and G3 pins of the unused channel. However, if you want to be able to create a separate pin to act as flag for ov/uv region (I think its 5V if within an OV/UV region and GND if outside of all regions).
 
+For LTSpice Operation:
+![[Attachments/SpiceSchematics/AirCellSwitchSimulation.asc|AirCellSwitchSimulation.asc]]
+![[Attachments/SpiceSchematics/AirCellSwitchSimulation.plt|AirCellSwitchSimulation.plt]]
+
+For LTSpice symbol/models
+![[Attachments/SpiceModels/Infineon_PMOS_L0.asy|Infineon_PMOS_L0.asy]]
+![[Attachments/SpiceModels/OptiMOS_P2_40V_LTspice.lib|OptiMOS_P2_40V_LTspice.lib]]
 
 ## Meeting History
 Meet with Ben every Monday?
